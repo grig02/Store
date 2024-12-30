@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Shop</h1>
+        <div>
+            <button id="move" disabled>Move To Cart</button>
+        </div>
+        <div class="flex">
+            <div id="product-list">
+                <h3>products</h3>
+                <div id="list" class="flex2"></div>
+            </div>
+            <div>
+                <h3 id="total">cart 0 USD</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>product</th>
+                            <th>price</th>
+                            <th>quantity</th>
+                            <th>subttotal</th>
+                            <th>actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script type="module">
+        import {Shop} from "./js/Shop.js"
+        let app = new Shop()
+    </script>
+</body>
+</html>

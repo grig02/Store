@@ -1,0 +1,40 @@
+*{
+    font-family: sans-serif;
+}
+.container{
+    padding: 10px;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.flex2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.table,.table tr,.table td, table th{
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+.table td, .table th{
+    padding: 2px 10px;
+}
+#product-list{
+    width: 50%;
+}
+.flex img{
+    width: 120px;
+    height: 120px;
+}
+#list div{
+    cursor: move;
+}
+.selected{
+    padding:4px;
+    background-color: gray;
+}
+.table td{
+    padding: 20px;
+}
